@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 import view.Inicio;
 import view.InicioSesion;
 import view.Menu;
+import view.NuevoJuguete;
 import view.Registro;
 
 
@@ -39,6 +40,13 @@ public class Redirect {
                 menu.setVisible(true);
                 menu.setLocationRelativeTo(null);
                 menu.setSize(400,300);
+                break;
+            case 5:
+                NuevoJuguete nuevojuguete = new NuevoJuguete();
+                nuevojuguete.setVisible(true);
+                nuevojuguete.setLocationRelativeTo(null);
+                nuevojuguete.setSize(400,300);
+                
                 break;
             default:
                 throw new AssertionError();

@@ -180,9 +180,7 @@ public class NuevoJuguete extends javax.swing.JFrame {
     }//GEN-LAST:event_textoMarcaKeyTyped
 
     private void intBodegaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_intBodegaKeyTyped
-        if (textoMarca.getText().length() >= 4){
-            evt.consume();
-        }
+
     }//GEN-LAST:event_intBodegaKeyTyped
 
 

@@ -16,7 +16,7 @@ public class OperacionesBodega {
         MYSQLWork.getConnection();
         try {
             PreparedStatement consulta;
-            consulta = conexion.prepareStatement("INSERT INTO "+ this.tabla +" (USUARIO, NOMBRE, CONTRASENA) VALUES (?,?,?)");
+            consulta = conexion.prepareStatement("INSERT INTO "+ this.tabla +" (JUGUETE, MARCA, BODEGA) VALUES (?,?,?)");
             
             consulta.setString(1, JUGUETE);
             consulta.setString(2, MARCA);
@@ -43,7 +43,7 @@ public class OperacionesBodega {
 
             while (result.next()) {
 
-                String columnValue = result.getString("USUARIO");
+                String columnValue = result.getString("JUGUETE");
                 if (columnValue.equals(JUGUETE)){
                     check=true;
                 }  
